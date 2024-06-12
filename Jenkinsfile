@@ -8,7 +8,7 @@ pipeline {
         stage('checkout') {
             steps {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs:
-                                [[credentialsId: 'gitcredentials', url: 'https://github.com/chenglinhiverlab/flask-pytest-docker-jenkins.git']])
+                                [[credentialsId: 'gitcredentials', url: 'https://github.com/chenglinhiverlab/flask_docker_jenkins_example.git']])
             }
         }
         
